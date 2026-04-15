@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="text-gray-900 bg-white dark:text-white dark:bg-gray-950">
+    <!-- header -->
+     <!-- nav -->
+<nav class="bg-blue-50 dark:bg-gray-800 fixed w-full z-20 top-0 start-0 sticky">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse ">
+        <img src="./assets/logo.png" class="h-15 rounded-full" alt="Flowbite Logo">
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap max-sm:hidden">SakolCam</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="./login.html">
+        <button type="button" class="text-white bg-[#1b1464] hover:bg-blue-700  rounded-xl  font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">Sign in</button>
+      </a>
+        
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading " aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  md:bg-neutral-primary">
+        <li>
+          <a href="/social.html" class="block py-2 px-3 bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Social</a>
+        </li>
+        <li>
+          <a href="/university.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">University</a>
+        </li>
+        <li>
+          <a href="/major.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Major</a>
+        </li>
+        <li>
+          <a href="/about.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- main -->
+ <main>
+  <!-- hero section -->
+   <div class="absolute top-30 -left-24 w-[520px] h-[550px] bg-[#67191f]/20 rounded-full blur-3xl "></div>
+    <div class="absolute top-32 right-24 w-[520px] h-[620px] bg-[#67191f]/15 rounded-full blur-3xl "></div>
+   <section class="mx-auto grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center bg-white dark:bg-gray-900 h-screen max-sm:h-auto px-10">
+    <div class="flex justify-center items-center">
+    <img data-aos="zoom-in" class="max-w-[400px]" src="./assets/thinking.png" alt="human thinking ">
+  </div>
+   <div  data-aos="fade-up" class="flex flex-col text-center align-middle max-sm:my-10 ">
+    <h1  class="text-[56px] max-sm:text-[30px] md:text-[38px] lg:text-[58px] font-bold text-[#67191f]">Unlock Your Potential in Cambodia</h1>
+    <p class="x-sm:text-[10px] md:text-md lg:text-lg   font-stretch-50% text-gray-500 dark:text-blue-50">Explore every campus, compare top-tier programs, and find the perfect university to launch your career. Your journey to excellence starts here.</p>
+    <!-- <div class="grid md:grid-cols-4 gap-2 mt-5 ">
+      <img class="object-cover rounded-xl h-50 w-50" src="https://cdn.kiripost.com/static/images/watermak_02974.2e16d0ba.fill-960x540.jpg" alt="rupp">
+      <img class="object-cover rounded-xl h-50 w-50" src="https://uni24k.com/media/CACHE/images/unis/building_schools_u364e4ca0_772c4f1e/0b614424a3c23214ee21e9bca7778dbf.jpg" alt="university of Cambodia">
+      <img class="object-cover rounded-xl h-50 w-50"  src="https://www.khmertimeskh.com/wp-content/uploads/2025/07/Cambodias-National-University-of-Management-is-ranked-69th-among-400-world-class-innovative-universities.jpg" alt="cnu">
+      <img class="object-cover rounded-xl h-50 w-50"  src="https://www.waca.associates/en/wp-content/uploads/2021/02/itc-front-entrance.png" alt="itc">
+    </div> -->
+    <div class="mt-8 flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg justify-center">
+  <div class="relative w-full">
+    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+      <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+    <input 
+      type="text" 
+      placeholder="Search for majors or universities..." 
+      class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-xl leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition duration-150 ease-in-out shadow-sm"
+    >
+  </div>
+
+  <button class="w-full sm:w-auto px-8 py-3 bg-[#1b1464] hover:bg-blue-700 text-white font-medium rounded-xl transition-all duration-200 shadow-md transform active:scale-95">
+    Search
+  </button>
+</div>
+  </div>
+  
+   </section>
+   <!-- all university section -->
+    <section class="p-16 max-sm:px-2 mx-auto  dark:bg-gray-950 dark:text-white">
+    <h2  data-aos="zoom-in" class="text-3xl font-bold mb-8 text-center">Universities in Cambodia</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <!-- uni 1 -->
+     <div  data-aos="fade-up" class=" block max-w-sm rounded-xl shadow-xs dark:shadow-xs dark:shadow-[#1b1464] ">
+    <div>
+        <img class="rounded-t-xl object-cover w-full h-[200px] " src="https://upload.wikimedia.org/wikipedia/en/a/a2/RUPP_logo.PNG" alt="" />
+    </div>
+    <div class="p-6 text-center">
+        <a href="#">
+            <h5 class=" mb-3 text-2xl font-semibold tracking-tight text-heading">Royal University Of Phnom Phenh</h5>
+            <p class="mb-3">Phnom Penh, Plublic University,  Established in 1960</p>
+        </a>
+        <a href="./rupp.html" class="inline-flex items-center text-white bg-[#69191f]  hover:bg-red-700  rounded-xl text-sm px-4 py-2.5 focus:outline-none">
+        Read more
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+    </div>
+    
+</div>
+<!-- uni 2 -->
+     <div  data-aos="fade-up" class=" block max-w-sm rounded-xl shadow-xs dark:shadow-xs dark:shadow-[#1b1464]">
+    <div>
+        <img class="rounded-t-xl object-cover w-full h-[200px] " src="https://upload.wikimedia.org/wikipedia/en/f/f7/Institute_of_Technology_of_Cambodia_logo.png" alt="" />
+    </div>
+    <div class="p-6 text-center">
+        <a href="#">
+            <h5 class=" mb-3 text-2xl font-semibold tracking-tight text-heading">Institute of Technology of Cambodia</h5>
+            <p class="mb-3">Phnom Penh, Plublic University, The Institute was founded in 1964</p>
+        </a>
+        <a href="#" class="inline-flex items-center text-white bg-[#69191f]  hover:bg-red-700  rounded-xl text-sm px-4 py-2.5 focus:outline-none">
+        Read more
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+    </div>
+    
+</div>
+<!-- uni 3 -->
+     <div  data-aos="fade-up" class=" block max-w-sm rounded-xl shadow-xs dark:shadow-xs dark:shadow-[#1b1464]">
+    <div>
+        <img class="rounded-t-xl object-cover w-full h-[200px] " src="https://upload.wikimedia.org/wikipedia/en/9/9f/RUFA_new_logo.png" alt="" />
+    </div>
+    <div class="p-6 text-center">
+        <a href="#">
+            <h5 class=" mb-3 text-2xl font-semibold tracking-tight text-heading">Royal University of Fine Arts</h5>
+            <p class="mb-3"> the oldest university in Cambodia, having been in existence since 1917.</p>
+        </a>
+        <a href="#" class="inline-flex items-center text-white bg-[#69191f]  hover:bg-red-700  rounded-xl text-sm px-4 py-2.5 focus:outline-none">
+        Read more
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+    </div>
+    
+</div>
+<!-- uni 4 -->
+     <div  data-aos="fade-up" class="  block max-w-sm rounded-xl shadow-xs dark:shadow-xs dark:shadow-[#1b1464]">
+    <div>
+        <img class="rounded-t-xl object-cover w-full h-[200px] " src="https://upload.wikimedia.org/wikipedia/en/6/66/UHS_Cambodia_logo.png" alt="" />
+    </div>
+    <div class="p-6 text-center">
+        <a href="#">
+            <h5 class=" mb-3 text-2xl font-semibold tracking-tight text-heading">University of Health Sciences (Cambodia)</h5>
+            <p class="mb-3">Phnom Penh, Plublic University, first established in June 1946</p>
+        </a>
+        <a href="#" class="inline-flex items-center text-white bg-[#69191f]  hover:bg-red-700  rounded-xl text-sm px-4 py-2.5 focus:outline-none">
+        Read more
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+    </div>
+    
+</div>
+    
+</div>
+<div  data-aos="zoom-out" class="flex justify-center my-5">
+  <a href="#" class="inline-flex items-center text-white bg-[#1b1464]  hover:bg-blue-700  rounded-xl text-lg px-6 py-3 focus:outline-none">
+        see more
+    </a>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <!-- province section -->
+   <section class=" dark:bg-gray-700 pt-10">
+     <h2  data-aos="zoom-in" class="text-3xl font-bold mb-8 text-center">Universities in each Province</h2>
+     <div class="grid lg:grid-cols-2">
+      <div class="flex justify-center">
+        <img data-aos="flip-left" class="max-w-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Provincial_Boundaries_in_Cambodia.svg/1280px-Provincial_Boundaries_in_Cambodia.svg.png" alt="map">
+      </div>
+      <!-- list of province -->
+      <div>
+        <section class="max-w-7xl mx-auto px-6 py-12">
+  <div data-aos="fade-up" class="mb-10 text-center">
+    <h2 class="text-3xl font-bold  mb-2">Explore University</h2>
+    <p class="text-gray-600">Discover all university in 25 provinces and municipalities across the Kingdom of Cambodia.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+    <!-- pp -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700 transition-colors">Phnom Penh</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50 transition-colors">
+        <svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </div>
+    </div>
+    <!-- province 1 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Siem Reap</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 2 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kandal</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 3 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Banteay Meanchey</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 4 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Battambang</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 5 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kampong Cham</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 6 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kampong Chhnang</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 7 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kampong Speu</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 8 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kampot</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+     <!-- province 9 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">	Kampong Thom</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 10 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Kep</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    <!-- province 11 -->
+    <div data-aos="fade-up" class="group p-4 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md hover:border-indigo-200 transition-all duration-300 flex items-center justify-between cursor-pointer">
+      <div>
+        <h3 class="font-semibold text-gray-800 group-hover:text-blue-700">Koh Kong</h3>
+      </div>
+      <div class="bg-gray-50 p-2 rounded-lg group-hover:bg-indigo-50"><svg class="w-4 h-4 text-gray-400 group-hover:text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></div>
+    </div>
+    </div>
+    <div data-aos="zoom-out" class="flex justify-center my-5">
+  <a href="#" class="inline-flex items-center text-white bg-[#1b1464]  hover:bg-blue-700  rounded-xl text-lg px-6 py-3 focus:outline-none">
+        see more
+    </a>
+</section>
+    
+</div>
+</section>
+ </main>
+  <!-- footer -->
+   <footer class="bg-[#1b1464]"> 
+    <section class="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- logo -->
+     <section class="flex flex-col justify-center items-center max-sm:my-5">
+      <div data-aos="flip-left">
+        <img class="max-w-40 rounded-xl" src="./assets/logo.png" alt="">
+      </div>
+      <div  data-aos="zoom-in" class="text-white text-xl font-medium text-center mt-4">
+        <h3>Sakol Cam</h3>
+        <p>Explore all universitys in Cambodia</p>
+      </div>
+     </section>
+     <!-- explore -->
+      <section data-aos="fade-up" class="text-white font-medium flex flex-col py-6 items-center">
+        <h1 class=" text-xl my-5 max-sm:my-1">Explore Our Website</h1>
+        <ul class="text-md max-sm:text-xl space-y-3 text-body list-disc list-inside">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./university.html">University</a></li>
+          <li><a href="./major.html">Major</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </section>
+    <!-- Contact -->
+  <section data-aos="fade-up" id="contact" class="py-4">
+    <div class="max-w-sm mx-auto px-4">
+      <h2 class="text-xl font-bold mb-6 text-center  text-white">Contact Us</h2>
+      <form class="space-y-4 text-gray-900">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl">
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl">
+        <textarea placeholder="Message" class="w-full p-3 border rounded-xl"></textarea>
+        <button class="text-white bg-[#67191f] px-6 py-2 rounded-xl w-full">Send</button>
+      </form>
+    </div>
+  </section>
+    </section>
+  
+  <!-- year -->
+   <div class="bg-white w-full h-0.5"></div>
+   <section class="text-center text-md font-medium py-5 text-white">
+    <p >@2026 Phnom Penh</p>
+   </section>
+   </footer>
+      <!-- flowbite script -->
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+        // Initialize AOS using Vanilla JS
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800, // Animation duration in ms
+                once: true,    // Whether animation should happen only once - while scrolling down
+                offset: 100    // Offset (in px) from the original trigger point
+            });
+        });
+    </script>
+</body>
+</html>
