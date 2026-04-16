@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" >
 <head>
+    <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sakal</title>
@@ -10,10 +15,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head> 
-<body  class="text-gray-900 bg-white dark:text-white dark:bg-gray-950 ">
+<body  class="">
     <!-- header -->
      <!-- nav -->
-<nav class="bg-blue-50 dark:bg-gray-800 fixed w-full z-20 top-0 start-0 sticky">
+<nav class="bg-[#1b1464] text-white fixed w-full z-20 top-0 start-0 sticky">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="./assets/logo.png" class="h-15 rounded-full" alt="Flowbite Logo">
@@ -29,7 +34,7 @@
       </button>
 
       <a href="./login.html">
-        <button type="button" class="text-white bg-[#1b1464] hover:bg-blue-700 rounded-xl font-medium leading-5 text-sm px-3 py-2 focus:outline-none">Sign in</button>
+        <button type="button" class="text-[#1b1464] bg-white hover:bg-gray-100 rounded-xl font-medium leading-5 text-sm px-3 py-2 focus:outline-none">Sign in</button>
       </a>
 
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading" aria-controls="navbar-sticky" aria-expanded="false">
@@ -41,11 +46,11 @@
     </div>
 
     <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:bg-neutral-primary">
-        <li><a href="/index.html" class="block py-2 px-3 bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a></li>
-        <li><a href="/university.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">University</a></li>
-        <li><a href="/major.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Major</a></li>
-        <li><a href="/about.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">About</a></li>
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+        <li><a href="/index.html" class="block py-2 px-3 font-bold text-gray-200  hover:bg-[#67191f] rounded-xl " aria-current="page">Home</a></li>
+        <li><a href="/university.html" class="block py-2 px-3 text-heading rounded-xl hover:bg-[#67191f]">University</a></li>
+        <li><a href="/major.html" class="block py-2 px-3 text-heading rounded-xl hover:bg-[#67191f]">Major</a></li>
+        <li><a href="/about.html" class="block py-2 px-3 text-heading rounded-xl hover:bg-[#67191f]">About</a></li>
       </ul>
     </div>
   </div>
@@ -58,7 +63,7 @@
   <!-- hero section or section 1 -->
     <div class="absolute top-30 -left-24 w-[520px] h-[550px] bg-[#67191f]/10 rounded-full blur-3xl "></div>
     <div class="absolute top-32 right-24 w-[620px] h-[620px] bg-[#67191f]/15 rounded-full blur-3xl "></div>
-   <section class="mx-auto grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center bg-white dark:bg-gray-900">
+   <section class="mx-auto grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center dark:bg-gray-900 dark:text-white">
     <div data-aos="fade-up" class="text-center align-middle max-sm:my-10"> 
       <div  class="text-[56px] max-sm:text-[30px] md:text-[38px] lg:text-[58px] font-bold ">
       <h1>Grow Your Learing</h1>
@@ -83,10 +88,10 @@
    </section>
   <!--  Universities section-->
   <section class="p-16 max-sm:px-2 mx-auto  dark:bg-gray-700">
-    <h2 data-aos="zoom-in" class="text-2xl font-bold mb-8 text-center">Top Universities</h2>
+    <h2 data-aos="zoom-in" class="text-2xl font-bold mb-8 text-center dark:text-white">Top Universities</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       <!-- card -->
-      <div data-aos="fade-down-right" class="p-6 max-sm:px-0 rounded-xl shadow  bg-white dark:bg-gray-800">
+      <div  data-aos="fade-up" class="p-6 max-sm:px-0 rounded-xl shadow  dark:text-white dark:bg-gray-800">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo8mYvh4Aw3OAHw106Xm65KEoG-W6d2RAV-2jSSX4xpvWCBwCErMJJ6I_Xkv-CY0eABSLZ7MqUqxCA-OKGXDyAbKMWL855-nOgI1fo2dWKm9qqnoTcnu4aYw-eDILaP4LwBbwuP68haqU/s1600/RUPP-Royal-University-of-Phnom-Penh1.jpg" alt="rupp">
 <div class=" block max-w-sm p-6 ">
     <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">Royal University Of Phnom Penh</h5>
@@ -97,7 +102,7 @@
     </a>
 </div>
       </div>
-     <div data-aos="fade-up" class="bg-white dark:bg-gray-950 p-6 rounded-xl shadow  bg-white dark:bg-gray-800">
+     <div data-aos="fade-up" class="p-6 rounded-xl shadow dark:text-white dark:bg-gray-800">
         <img src="https://camtesol.org/Upload_s/ITC%203.jpg" alt="rupp">
 <div class=" block max-w-sm p-6 ">
     <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">Institute of Technology of Cambodia</h5>
@@ -109,7 +114,7 @@
 </div>
 
       </div>
-      <div data-aos="fade-down-left" class="bg-white p-6 rounded-xl shadow  bg-white dark:bg-gray-800">
+      <div data-aos="fade-up" class=" p-6 rounded-xl shadow dark:text-white dark:bg-gray-800">
         <img src="https://www.khmertimeskh.com/wp-content/uploads/2025/07/Cambodias-National-University-of-Management-is-ranked-69th-among-400-world-class-innovative-universities.jpg" alt="raoc">
 <div class="block max-w-sm p-6">
     <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">National University of Management</h5>
@@ -127,7 +132,7 @@
   <!-- Majors Section -->
   <section id="majors" class="py-16 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 flex flex-col justify-center items-center text-center">
-      <h2  data-aos="zoom-out" class="text-2xl font-bold mb-8">Explore Majors</h2>
+      <h2  data-aos="zoom-out" class="text-2xl font-bold mb-8 dark:text-white">Explore Majors</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-sm:gap-0 ">
         
 <!-- major 1 -->
@@ -208,86 +213,86 @@
   </section>
 
   <!-- Reviews -->
-<section id="reviews" class="py-16 bg-gray-100 dark:bg-gray-900">
+<section id="reviews" class="py-16  dark:bg-gray-700">
   <div  class="max-w-5xl mx-auto px-4 text-center">
-    <h2 data-aos="zoom-in" data-aos="zoom-out" class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Student Reviews</h2>
-    <div  data-aos="fade-up" class="grid bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 md:grid-cols-2 max-w-5xl mx-auto overflow-hidden">
+    <h2 data-aos="zoom-in" data-aos="zoom-out" class="text-2xl font-bold mb-8  dark:text-white">Student Reviews</h2>
+    <div data-aos="fade-up" class="grid bg-white dark:bg-gray-800 rounded-xl border border-gray-200  md:grid-cols-2 max-w-5xl mx-auto overflow-hidden">
 
       <!-- Card 1 - RUPP -->
-      <figure class="flex flex-col items-center p-8 text-center border-b border-r border-gray-200 dark:border-gray-700">
+      <figure class="flex flex-col items-center p-8 text-center border-b border-r border-gray-200  dark:bg-gray-800 dark:text-white">
         <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 mb-3">
-          <span class="w-2 h-2 rounded-full bg-blue-600 inline-block"></span>
+          <span class="w-2 h-2 rounded-full bg-blue-600 dark:bg-black inline-block"></span>
           Royal University of Phnom Penh
         </span>
         
         <blockquote class="mb-6">
-          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">World-class lecturers, local heart</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">RUPP gave me access to some of the best professors in Southeast Asia while keeping me grounded in Cambodian issues. The development studies program changed how I see my country's future.</p>
+          <h3 class="text-base font-semibold  dark:text-white mb-2">World-class lecturers, local heart</h3>
+          <p class="text-sm dark:text-gray-400 leading-relaxed">RUPP gave me access to some of the best professors in Southeast Asia while keeping me grounded in Cambodian issues. The development studies program changed how I see my country's future.</p>
         </blockquote>
         <figcaption class="flex items-center gap-2 mt-auto">
           <div class="w-9 h-9 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 flex items-center justify-center text-xs font-medium">SR</div>
           <div class="text-left">
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Sophea Ros</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400">Development Studies, Year 3 · Phnom Penh</p>
+            <p class="text-sm font-medium  dark:text-white text-shadow-gray-950">Sophea Ros</p>
+            <p class="text-xs  dark:text-gray-400 text-gray-500">Development Studies, Year 3 · Phnom Penh</p>
           </div>
         </figcaption>
       </figure>
 
       <!-- Card 2 - ITC -->
-      <figure class="flex flex-col items-center p-8 text-center border-b border-gray-200 dark:border-gray-700">
-        <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 mb-3">
+      <figure class="flex flex-col items-center p-8 text-center border-b border-gray-200  dark:bg-gray-800 dark:text-white">
+        <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full  dark:bg-gray-700 bg-gray-100 dark:text-gray-300 text-gray-600 border border-gray-200 dark:border-gray-600 mb-3">
           <span class="w-2 h-2 rounded-full bg-emerald-600 inline-block"></span>
           Institute of Technology of Cambodia
         </span>
         
         <blockquote class="mb-6">
-          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">Rigorous, demanding, worth every bit</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">ITC is not easy — the coursework is intense and the math never stops. But the engineering foundation I built here got me an internship at a civil construction firm in my second year.</p>
+          <h3 class="text-base font-semibold  dark:text-white  mb-2">Rigorous, demanding, worth every bit</h3>
+          <p class="text-sm  dark:text-gray-400 leading-relaxed">ITC is not easy — the coursework is intense and the math never stops. But the engineering foundation I built here got me an internship at a civil construction firm in my second year.</p>
         </blockquote>
         <figcaption class="flex items-center gap-2 mt-auto">
           <div class="w-9 h-9 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 flex items-center justify-center text-xs font-medium">KC</div>
           <div class="text-left">
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Kosal Chan</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400">Civil Engineering, Year 2 · Kampong Cham</p>
+            <p class="text-sm font-medium  dark:text-white ">Kosal Chan</p>
+            <p class="text-xs  dark:text-gray-400 ">Civil Engineering, Year 2 · Kampong Cham</p>
           </div>
         </figcaption>
       </figure>
 
       <!-- Card 3 - NUM -->
-      <figure class="flex flex-col items-center p-8 text-center border-r border-gray-200 dark:border-gray-700">
-        <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 mb-3">
+      <figure class="flex flex-col items-center p-8 text-center border-r border-gray-200  dark:bg-gray-800 dark:text-white">
+        <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700  dark:text-gray-300 text-gray-600  border border-gray-200 dark:border-gray-600 mb-3">
           <span class="w-2 h-2 rounded-full bg-amber-500 inline-block"></span>
           National University of Management
         </span>
         <blockquote class="mb-6">
-          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">Real connections with industry</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">NUM's partnership with local banks and businesses is what sets it apart. I networked with hiring managers from ACLEDA and Canadia Bank while still a student through their career fairs.</p>
+          <h3 class="text-base font-semibold  dark:text-white mb-2">Real connections with industry</h3>
+          <p class="text-sm  dark:text-gray-400 leading-relaxed">NUM's partnership with local banks and businesses is what sets it apart. I networked with hiring managers from ACLEDA and Canadia Bank while still a student through their career fairs.</p>
         </blockquote>
         <figcaption class="flex items-center gap-2 mt-auto">
           <div class="w-9 h-9 rounded-full bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 flex items-center justify-center text-xs font-medium">LN</div>
           <div class="text-left">
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Lina Noun</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400">Finance & Banking, Graduate · Siem Reap</p>
+            <p class="text-sm font-medium dark:text-white">Lina Noun</p>
+            <p class="text-xs dark:text-gray-400">Finance & Banking, Graduate · Siem Reap</p>
           </div>
         </figcaption>
       </figure>
 
       <!-- Card 4 - PUC -->
-      <figure class="flex flex-col items-center p-8 text-center">
+      <figure class="flex flex-col items-center p-8 text-center border-r border-gray-200  dark:bg-gray-800 dark:text-white">
         <span class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 mb-3">
           <span class="w-2 h-2 rounded-full bg-pink-600 inline-block"></span>
           Paññāsāstra University of Cambodia
         </span>
         
         <blockquote class="mb-6">
-          <h3 class="text-base font-semibold text-gray-900 dark:text-white mb-2">Modern campus, international outlook</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">PUC's English-medium programs and exchange partnerships with universities in Japan and South Korea opened doors I never imagined. The campus facilities are honestly the best in Phnom Penh.</p>
+          <h3 class="text-base font-semibold  dark:text-white mb-2">Modern campus, international outlook</h3>
+          <p class="text-sm  dark:text-gray-400 leading-relaxed">PUC's English-medium programs and exchange partnerships with universities in Japan and South Korea opened doors I never imagined. The campus facilities are honestly the best in Phnom Penh.</p>
         </blockquote>
         <figcaption class="flex items-center gap-2 mt-auto">
           <div class="w-9 h-9 rounded-full bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 flex items-center justify-center text-xs font-medium">VP</div>
           <div class="text-left">
-            <p class="text-sm font-medium text-gray-900 dark:text-white">Virak Phan</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400">International Relations, Year 4 · Battambang</p>
+            <p class="text-sm font-medium  dark:text-white">Virak Phan</p>
+            <p class="text-xs  dark:text-gray-400">International Relations, Year 4 · Battambang</p>
           </div>
         </figcaption>
       </figure>
@@ -343,23 +348,6 @@
     <p >@2026 Phnom Penh</p>
    </section>
    </footer>
-  <script>
-  function toggleDark() {
-    const html = document.documentElement;
-    html.classList.toggle('dark');
-    const isDark = html.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    document.getElementById('darkIcon').className = isDark
-      ? 'fa-solid fa-sun text-sm'
-      : 'fa-solid fa-moon text-sm';
-  }
-
-  // Apply saved theme on load
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-    document.getElementById('darkIcon').className = 'fa-solid fa-sun text-sm';
-  }
-</script>
     <!-- flowbite script -->
      <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -373,6 +361,23 @@
             });
         });
     </script>
-   
+   <script>
+  function toggleDark() {
+    const html = document.documentElement;
+    html.classList.toggle('dark');
+    const isDark = html.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    document.getElementById('darkIcon').className = isDark
+      ? 'fa-solid fa-sun text-sm'
+      : 'fa-solid fa-moon text-sm';
+  }
+
+  // Sync icon to match current theme on load
+  document.addEventListener('DOMContentLoaded', function () {
+    if (document.documentElement.classList.contains('dark')) {
+      document.getElementById('darkIcon').className = 'fa-solid fa-sun text-sm';
+    }
+  });
+</script>
 </body>
 </html>
