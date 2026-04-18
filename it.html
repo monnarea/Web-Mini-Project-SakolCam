@@ -11,30 +11,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- nav -->
+    <!-- header -->
+     <header>
+         <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-6 py-4 flex items-center justify-between sticky top-0 z-10">
+    <a href="./index.html" class="flex items-center gap-2.5">
+      <div   class=" rounded-lg flex items-center justify-center flex-shrink-0 text-xl text-[#1b1464] dark:text-white">
+        <!-- <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
+    <i class="fa-solid fa-arrow-left"></i>  
+    </div>
+      <span class="font-semibold text-md text-[#1b1464] dark:text-white">Back</span>
+    </a>
+   
+  </nav>
+     </header>
+        <!-- main -->
+      <main>
+         <!-- hero section -->
+          <section class="relative mx-auto flex justify-center items-center h-screen bg-white dark:bg-gray-900 overflow-hidden">
+  <!-- Background Image -->
+  <img 
+    src="./assets/01gif.gif" 
+    alt="rupp image"
+    class="absolute inset-0 w-full h-full object-cover opacity-30">
 
-    <!-- main -->
-     <main>
-        <!-- hero section -->
-          <!-- <div class="absolute top-30 -left-24 w-[520px] h-[550px] bg-[#67191f]/10 rounded-full blur-3xl "></div>
-    <div class="absolute top-32 right-24 w-[620px] h-[620px] bg-[#67191f]/15 rounded-full blur-3xl "></div> -->
-         <section class=" h-screen text-center flex flex-col justify-center items-center bg-[url(./assets/01gif.gif)]">
-            <!-- <div>
-                <img class="w-[100px] absolute right-15 top-9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/3840px-Spring_Boot.svg.png" alt="spring">
-            </div>
-             <div>
-                <img class="w-[200px] absolute left-15 top-40" src="https://www.xcitium.com/assets/images/devops-monitoring.png" alt="dev ops">
-            </div>
-             <div>
-                <img class="w-[150px] absolute right-25 bottom-10" src="https://img.icons8.com/color/512/flutter.png" alt="futter">
-            </div>
-            <div>
-                <img class="w-[150px] absolute left-25 bottom-7" src="https://images.seeklogo.com/logo-png/44/2/web-icon-logo-png_seeklogo-446770.png" alt="futter">
-            </div> -->
-            <h1 class="text-[56px] max-sm:text-[30px] md:text-[38px] lg:text-[58px] font-bold text-[#67191f]">Information Technology</h1>
-            <p class="max-sm:text-[10px] md:text-md lg:text-lg   font-stretch-50% text-gray-500 dark:text-blue-50">Information Technology (IT) majors study how to design, build, and manage computing systems and networks to support organizational needs. Focused on practical, real-world application, this field covers hardware, software, cybersecurity, and databases. Students often choose specialties like web development, systems administration, or network engineering for high-growth tech careers.</p>
-         </section>
-     </main>
+    <!-- Content -->
+  <div data-aos="fade-up" class="relative text-center px-6 max-w-3xl"> 
+    
+    <h1 class="text-[30px] md:text-[48px] lg:text-[58px] font-bold text-[#1b1464] dark:text-white">
+      Information technology</span>
+    </h1>
+
+    <p class="mt-4 text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">
+       Information Technology (IT) majors study how to design, build, and manage computing systems and networks to support organizational needs.
+    </p>
+
+  </div>
+ </section>
+  <!-- detail section -->
+    <section class="mx-auto grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center  dark:bg-gray-900 max-sm:h-auto px-10 py-20">
+         <div class="mx-auto flex items-center justify-center  px-10"> 
+          <img data-aos="fade-right" class="w-[450px] my-10 max-sm:w-[350px] max-sm:my-2" src="https://lines-est.com/wp-content/uploads/2024/01/Picturerr.png" alt="coding">
+          
+          </div>
+        <div  data-aos="fade-up" class="text-start">
+          <h3 class="text-[50px] max-sm:text-[30px] md:text-[38px] lg:text-[50px] font-medium text-[#1b1464] dark:text-blue-50">What is IT (Information Technology)?</h3>
+             <p class="mt-4 text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">The field of information technology (IT for short) is often associated with the computer systems, hardware, software, and networks related to the processing and distribution of data. These include networking hardware, such as servers and routers, and applications that allow communication over a variety of networks and the Internet at large.</p>
+           
+        </div>
+        
+      
+    </div>
+    <!-- <div class="p-10 mx-10  rounded-2xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition"> -->
+        <!-- <div class="text-primary text-3xl mb-4"></div> -->
+        <!-- <h2 class="text-xl font-semibold mb-3">About the creater</h2>
+        <p class="text-gray-600 dark:text-gray-400">
+         SakolCam was independently created to empower students in Cambodia to make confident and informed decisions about their future. I built this platform to simplify the process of finding clear, reliable, and well-organized university information—making it easier for everyone to choose a path that truly fits their goals and ambitions.
+        </p>
+      </div> -->
+    </section>
+    <!-- component of it section -->
+     <section class="mx-auto grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center  dark:bg-gray-900 max-sm:h-auto px-10 py-20">
+         
+        <div data-aos="fade-up" class="mt-4 text-sm md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">
+            <h3 class="text-[50px] max-sm:text-[30px] md:text-[38px] lg:text-[50px] font-medium text-[#1b1464] dark:text-blue-50 mb-2">Core Components of IT</h3>
+            <ul class="list-disc pl-5 space-y-1">
+                <li>Hardware: Servers, computers, smartphones, and networking equipment.</li>
+                <li>Software: Operating systems, applications, and productivity tools.</li>
+                <li>Networking: Data centers, cloud storage, and internet connectivity.</li>
+                <li>Security: Firewalls, encryption, and antivirus, as described by. </li>
+            </ul>
+        </div>
+        <div>
+            <img data-aos="fade-left" class="w-[600px] my-10 max-sm:w-[400px] max-sm:my-2" src="https://galorath.com/wp-content/uploads/2021/10/IT-infrastructure-components-1024x461.png" alt="core component of it">
+        </div>
+ 
+  </section>
+   <!-- university section -->
+    <section class=" dark:bg-gray-700 dark:text-white py-5 flex flex-col justify-center items-center">
+      <h2 data-aos="zoom-in" class="text-2xl font-bold mb-8 text-center">University</h2>
+  
+</div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-20 max-sm:px-4">
+        <!-- card 1 -->
+        <div data-aos="fade-up"  class=" dark:bg-gray-700 block dark:border dark:border-2 dark:border-gray-500 max-w-sm p-6  rounded-xl shadow-xs">
+    <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">Cambodia Academy of Digital Technology (CADT)</h5>
+    <p class="text-body mb-6"> a specialized public institution focusing on digital technology and innovation</p>
+    <a href="#" class="mt-4 inline-flex items-center text-white bg-[#1b1464] hover:bg-blue-700 font-medium leading-5 rounded-xl text-sm px-4 py-2.5 focus:outline-none">view detail
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+        </div>
+        <!-- card 2 -->
+        <div data-aos="fade-up"  class=" dark:bg-gray-700 block dark:border dark:border-2 dark:border-gray-500 max-w-sm p-6  rounded-xl shadow-xs">
+    <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">Royal University of Phnom Penh (RUPP)</h5>
+    <p class="text-body mb-6">Provides comprehensive computer science and IT degrees through its IT center.</p>
+    <a href="#" class="mt-4 inline-flex items-center text-white bg-[#1b1464] hover:bg-blue-700 font-medium leading-5 rounded-xl text-sm px-4 py-2.5 focus:outline-none">view detail
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+        </div>
+        <!-- card 3 -->
+        <div data-aos="fade-up"  class=" dark:bg-gray-700 block dark:border dark:border-2 dark:border-gray-500 max-w-sm p-6  rounded-xl shadow-xs">
+    <h5 class="mb-3 text-2xl font-semibold tracking-tight  leading-8">Institute of Technology of Cambodia (ITC)</h5>
+    <p class="text-body mb-6">Offers specialized engineering and technical IT degrees with a focus on practical skills.</p>
+    <a href="#" class="mt-4 inline-flex items-center text-white bg-[#1b1464] hover:bg-blue-700 font-medium leading-5 rounded-xl text-sm px-4 py-2.5 focus:outline-none">view detail
+        <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
+    </a>
+        </div>
+      </div>
+           <div data-aos="zoom-out" class="flex justify-center my-5">
+        <a href="#" class="inline-flex items-center text-white bg-[#67191f]  hover:bg-red-700  rounded-xl text-lg px-6 py-3 focus:outline-none">
+        see more
+        </a> 
+    </section>
+
+      </main>
+      <!-- footeer -->
+<footer class="bg-[#1b1464] text-white text-center py-6">
+  <p>© 2026 SakolCam </p>
+</footer>
        <!-- flowbite script -->
      <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
